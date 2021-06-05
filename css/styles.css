@@ -237,7 +237,7 @@ header nav .navigation-2 .sign-up-button {
 /*footer*/
 footer {
   /*size format*/
-  border: 5px solid yellow;
+  border: 5px solid darkorange;
   height: 300px;
   width: 100%;
   /*background format*/
@@ -273,8 +273,37 @@ footer .footer-shortly div {
           flex-direction: column;
 }
 
-footer .footer-shortly div * :first-child {
+footer .footer-shortly div.titlefooter p {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 0;
+  margin-right: 8rem;
+}
+
+footer .footer-shortly div *:first-child {
   font-weight: bold;
   font-size: 20px;
+}
+
+footer .footer-shortly div *:not(:first-child) {
+  font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #9e9aa7;
+}
+
+footer .footer-shortly div.social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-shortly div.social-media-icons img {
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
