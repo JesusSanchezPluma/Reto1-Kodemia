@@ -3,6 +3,82 @@
 /*Neutral color*/
 /*Fonts*/
 /*header*/
+header {
+  height: 170px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 30px;
+}
+
+header nav .navigation-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+header nav .navigation-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+header nav .navigation-1 ul li {
+  margin-left: 2rem;
+}
+
+header nav .navigation-1 ul li a {
+  text-decoration: none;
+  color: #9e9aa7;
+  font-family: "Poppins", sans-serif;
+}
+
+header nav .navigation-2 .login-button {
+  background-color: white;
+  border: white;
+  font-size: 30px;
+  color: #9e9aa7;
+  font-family: "Poppins", sans-serif;
+}
+
+header nav .navigation-2 .sign-up-button {
+  background-color: #2acfcf;
+  border: 2px solid #3b3054;
+  width: 150px;
+  height: 60px;
+  border-radius: calc(60px/2);
+  font-size: 30px;
+  margin-left: 3rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
 /*main*/
 .hero {
   border: 5px solid red;

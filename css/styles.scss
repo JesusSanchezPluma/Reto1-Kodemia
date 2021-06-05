@@ -21,6 +21,62 @@ $font-poppins:'Poppins', sans-serif;
 
 /*header*/
 
+header{
+    height: 170px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    font-family: $font-poppins;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 30px;
+        .navigation-1{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            ul{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                li{
+                    margin-left: 2rem;
+                    a{
+                        text-decoration: none;
+                        color:$neutral-grayish-violet;
+                        font-family: $font-poppins;
+                    }
+                }
+            }
+        }
+        .navigation-2{
+            .login-button{
+                background-color: white;
+                border:white;
+                font-size: 30px;
+                color:$neutral-grayish-violet;
+                font-family: $font-poppins;
+            }
+            .sign-up-button{
+                background-color:$primary-cyan;
+                border:2px solid $primary-dark-violet;
+                width: 150px;
+                height: 60px;
+                border-radius: calc(60px/2);
+                font-size: 30px;
+                margin-left: 3rem;
+                color:white;
+                font-family: $font-poppins;
+            }
+        }
+    }
+}
+
+@media screen and (min-resolution: 1440 px){
+
+}
 
 /*main*/
 
