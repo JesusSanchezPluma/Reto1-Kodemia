@@ -8,6 +8,7 @@
 }
 
 /*header*/
+/* M O V I L E  M O D E */
 header {
   height: 170px;
   width: 100%;
@@ -57,26 +58,15 @@ header nav .navigation-1 p {
 }
 
 header nav .navigation-1 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
+  display: none;
 }
 
-header nav .navigation-1 ul li {
-  margin-left: 2rem;
+header nav .navigation-2 {
+  display: none;
 }
 
-header nav .navigation-1 ul li a {
-  text-decoration: none;
-  color: #9e9aa7;
-}
-
-header nav .navigation-2 .login-button {
+header nav .navigation-2 s
+.login-button {
   /*button format*/
   background-color: white;
   border: white;
@@ -87,8 +77,9 @@ header nav .navigation-2 .login-button {
   /*Hover*/
 }
 
-header nav .navigation-2 .login-button:hover {
-  background-color: red;
+header nav .navigation-2 s
+.login-button:hover {
+  background-color: orange;
   cursor: pointer;
   -webkit-transition: all 2s;
   transition: all 2s;
@@ -106,6 +97,118 @@ header nav .navigation-2 .sign-up-button {
   font-size: 25px;
   font-family: "Poppins", sans-serif;
   color: white;
+  /*Hover*/
+}
+
+header nav .navigation-2 .sign-up-button:hover {
+  background-color: red;
+  cursor: pointer;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+/* D E S K T O P   M O D E */
+@media only screen and (min-width: 1000px) {
+  header {
+    height: 170px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    margin-top: 45px;
+    font-family: "Poppins", sans-serif;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 25px;
+    margin-right: 95px;
+    margin-left: 95px;
+  }
+  header nav .navigation-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .navigation-1 p {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+  header nav .navigation-1 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none;
+  }
+  header nav .navigation-1 ul li {
+    margin-left: 2rem;
+    display: inline;
+  }
+  header nav .navigation-1 ul li a {
+    display: inline;
+    text-decoration: none;
+    color: #9e9aa7;
+  }
+  header nav .navigation-2 .login-button {
+    /*button format*/
+    background-color: white;
+    border: white;
+    /*text format*/
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    color: #9e9aa7;
+    /*Hover*/
+  }
+  header nav .navigation-2 .login-button:hover {
+    background-color: red;
+    cursor: pointer;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+  header nav .navigation-2 .sign-up-button {
+    /*button format*/
+    background-color: #2acfcf;
+    border: 2px solid #3b3054;
+    width: 150px;
+    height: 60px;
+    margin-left: 3rem;
+    /*text format*/
+    border-radius: calc(60px/2);
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    /*Hover*/
+  }
+  header nav .navigation-2 .sign-up-button:hover {
+    background-color: red;
+    cursor: pointer;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
 }
 
 /*main*/
@@ -317,6 +420,7 @@ footer {
 }
 
 footer .footer-shortly {
+  /*Positions with flexbox*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,6 +434,7 @@ footer .footer-shortly {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  /*size format*/
   padding-top: 60px;
   margin-right: 95px;
   margin-left: 95px;

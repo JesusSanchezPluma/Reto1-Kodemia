@@ -25,6 +25,8 @@ $font-poppins:'Poppins', sans-serif;
 /*header*/
 $font-size-header: 25px;
 
+/* M O V I L E  M O D E */
+
 header{
     height: 170px;
     width: 100%;
@@ -51,19 +53,15 @@ header{
                 font-weight: bold;
             }
             ul{
-                display: flex;
-                flex-direction: row;
-                list-style: none;
+                display: none;
                 li{
-                    margin-left: 2rem;
                     a{
-                        text-decoration: none;
-                        color:$neutral-grayish-violet;
                     }
                 }
             }
         }
         .navigation-2{
+            display: none;s
             .login-button{
                 /*button format*/
                 background-color: white;
@@ -74,7 +72,7 @@ header{
                 color:$neutral-grayish-violet;
                 /*Hover*/
                 &:hover{
-                    background-color: red;
+                    background-color: orange;
                     cursor: pointer;
                     transition: all 2s;
                 }
@@ -91,14 +89,99 @@ header{
                 font-size: $font-size-header;
                 font-family: $font-poppins;
                 color:white;
-
+                /*Hover*/
+                &:hover{
+                    background-color: red;
+                    cursor: pointer;
+                    transition: all 2s;
+                }
             }
         }
     }
 }
 
-@media screen and (min-resolution: 1440 px){
+/* D E S K T O P   M O D E */
 
+@media only screen and (min-width: 1000px){
+    header{
+        height: 170px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+        margin-top: 45px;
+        font-family: $font-poppins;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            font-size: $font-size-header;
+            margin-right: 95px;
+            margin-left: 95px;
+            .navigation-1{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                p{
+                    font-size: 40px;
+                    font-family: $font-poppins;
+                    font-weight: bold;
+                }
+                ul{
+                    display: flex;
+                    display: block;
+                    flex-direction: row;
+                    list-style: none;
+                    li{
+                        margin-left: 2rem;
+                        display: inline;
+                        a{
+                            display: inline;
+                            text-decoration: none;
+                            color:$neutral-grayish-violet;
+                        }
+                    }
+                }
+            }
+            .navigation-2{
+                .login-button{
+                    /*button format*/
+                    background-color: white;
+                    border:white;
+                    /*text format*/
+                    font-size: $font-size-header;
+                    font-family: $font-poppins;
+                    color:$neutral-grayish-violet;
+                    /*Hover*/
+                    &:hover{
+                        background-color: red;
+                        cursor: pointer;
+                        transition: all 2s;
+                    }
+                }
+                .sign-up-button{
+                    /*button format*/
+                    background-color:$primary-cyan;
+                    border:2px solid $primary-dark-violet;
+                    width: 150px;
+                    height: 60px;
+                    margin-left: 3rem;
+                    /*text format*/
+                    border-radius: calc(60px/2);
+                    font-size: $font-size-header;
+                    font-family: $font-poppins;
+                    color:white;
+                    /*Hover*/
+                    &:hover{
+                        background-color: red;
+                        cursor: pointer;
+                        transition: all 2s;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*main*/
@@ -281,10 +364,12 @@ footer{
     color:              white;
     font-family:        $font-poppins;
     .footer-shortly{
+        /*Positions with flexbox*/
         display:            flex;
         flex-direction:     row;
         justify-content:    space-between;
         align-items:        flex-start;
+        /*size format*/
         padding-top:    60px;
         margin-right:   95px;
         margin-left:    95px;
