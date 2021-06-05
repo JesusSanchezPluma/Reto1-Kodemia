@@ -2,6 +2,7 @@
 /*Secondary colors*/
 /*Neutral color*/
 /*Fonts*/
+/*Margins reset*/
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +10,19 @@
 
 /*header*/
 /* M O V I L E  M O D E */
-header {
-  height: 170px;
+body {
+  min-width: 375px;
   width: 100%;
-  top: 0;
-  left: 0;
-  font-size: 18px;
-  margin-top: 45px;
-  font-family: "Poppins", sans-serif;
 }
 
-header nav {
+body header {
+  height: 170px;
+  top: 0;
+  left: 0;
+  margin-top: 45px;
+}
+
+body header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +41,7 @@ header nav {
   margin-left: 95px;
 }
 
-header nav .navigation-1 {
+body header nav .navigation-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,73 +54,23 @@ header nav .navigation-1 {
           align-items: center;
 }
 
-header nav .navigation-1 p {
+body header nav .navigation-1 p {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
-header nav .navigation-1 ul {
+body header nav .navigation-1 ul {
   display: none;
 }
 
-header nav .navigation-1 ul li {
+body header nav .navigation-2 {
   display: none;
-}
-
-header nav .navigation-1 ul li a {
-  display: none;
-}
-
-header nav .navigation-2 {
-  display: none;
-}
-
-header nav .navigation-2 s
-.login-button {
-  /*button format*/
-  background-color: white;
-  border: white;
-  /*text format*/
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  color: #9e9aa7;
-  /*Hover*/
-}
-
-header nav .navigation-2 s
-.login-button:hover {
-  background-color: orange;
-  cursor: pointer;
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-header nav .navigation-2 .sign-up-button {
-  /*button format*/
-  background-color: #2acfcf;
-  border: 2px solid #3b3054;
-  width: 150px;
-  height: 60px;
-  margin-left: 3rem;
-  /*text format*/
-  border-radius: calc(60px/2);
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  /*Hover*/
-}
-
-header nav .navigation-2 .sign-up-button:hover {
-  background-color: red;
-  cursor: pointer;
-  -webkit-transition: all 2s;
-  transition: all 2s;
 }
 
 /* D E S K T O P   M O D E */
-@media only screen and (min-width: 1000px) {
-  header {
+@media only screen and (min-width: 1200px) {
+  body header {
     height: 170px;
     width: 100%;
     top: 0;
@@ -126,7 +79,7 @@ header nav .navigation-2 .sign-up-button:hover {
     margin-top: 45px;
     font-family: "Poppins", sans-serif;
   }
-  header nav {
+  body header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144,7 +97,7 @@ header nav .navigation-2 .sign-up-button:hover {
     margin-right: 95px;
     margin-left: 95px;
   }
-  header nav .navigation-1 {
+  body header nav .navigation-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -156,12 +109,12 @@ header nav .navigation-2 .sign-up-button:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  header nav .navigation-1 p {
+  body header nav .navigation-1 p {
     font-size: 40px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
   }
-  header nav .navigation-1 ul {
+  body header nav .navigation-1 ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,16 +125,20 @@ header nav .navigation-2 .sign-up-button:hover {
             flex-direction: row;
     list-style: none;
   }
-  header nav .navigation-1 ul li {
+  body header nav .navigation-1 ul li {
     margin-left: 2rem;
     display: inline;
   }
-  header nav .navigation-1 ul li a {
+  body header nav .navigation-1 ul li a {
     display: inline;
     text-decoration: none;
     color: #9e9aa7;
   }
-  header nav .navigation-2 .login-button {
+  body header nav .navigation-2 {
+    display: block;
+  }
+  body header nav .navigation-2 .login-button {
+    display: inline;
     /*button format*/
     background-color: white;
     border: white;
@@ -191,13 +148,14 @@ header nav .navigation-2 .sign-up-button:hover {
     color: #9e9aa7;
     /*Hover*/
   }
-  header nav .navigation-2 .login-button:hover {
+  body header nav .navigation-2 .login-button:hover {
     background-color: red;
     cursor: pointer;
     -webkit-transition: all 2s;
     transition: all 2s;
   }
-  header nav .navigation-2 .sign-up-button {
+  body header nav .navigation-2 .sign-up-button {
+    display: inline;
     /*button format*/
     background-color: #2acfcf;
     border: 2px solid #3b3054;
@@ -211,7 +169,7 @@ header nav .navigation-2 .sign-up-button:hover {
     color: white;
     /*Hover*/
   }
-  header nav .navigation-2 .sign-up-button:hover {
+  body header nav .navigation-2 .sign-up-button:hover {
     background-color: red;
     cursor: pointer;
     -webkit-transition: all 2s;
