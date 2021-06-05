@@ -61,15 +61,16 @@ header{
                 /*button format*/
                 background-color: white;
                 border:white;
+                /*text format*/
+                font-size: $font-size-header;
+                font-family: $font-poppins;
+                color:$neutral-grayish-violet;
+                /*Hover*/
                 &:hover{
                     background-color: red;
                     cursor: pointer;
                     transition: all 2s;
                 }
-                /*text format*/
-                font-size: $font-size-header;
-                font-family: $font-poppins;
-                color:$neutral-grayish-violet;
             }
             .sign-up-button{
                 /*button format*/
@@ -78,16 +79,12 @@ header{
                 width: 150px;
                 height: 60px;
                 margin-left: 3rem;
-                &:hover{
-                    background-color: red;
-                    cursor: pointer;
-                    transition: all 2s;
-                }
                 /*text format*/
                 border-radius: calc(60px/2);
                 font-size: $font-size-header;
                 font-family: $font-poppins;
                 color:white;
+
             }
         }
     }
@@ -170,3 +167,28 @@ header{
 
 /*footer*/
 
+footer{
+    /*size format*/
+    border: 5px solid yellow;
+    height: 300px;  
+    width: 100%; 
+    /*background format*/
+    background-color:$neutral-very-dark-violet;
+    color: white;
+    font-family: $font-poppins;
+    .footer-shortly{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-top: 50px;
+        div{
+            display:flex;
+            flex-direction: column;
+        }
+        div * :first-child{
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}
