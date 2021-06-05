@@ -17,11 +17,40 @@ $neutral-very-dark-violet: hsl(260, 8%, 14%);
 
 $font-poppins:'Poppins', sans-serif;
 
+
+
 /*header*/
 
 
 /*main*/
 
+
+.hero{
+    border: 5px solid red;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .hero-content{
+       border: 5px solid black;
+        display: flex;
+       flex-direction: row;
+       align-items: center;
+       padding: 1rem;
+       justify-content: center; 
+       .parrafo-uno{
+          color:black;
+          font-family: $font-poppins;
+           font-size: 45px;
+       }
+       
+       img{
+          
+           height: 350px;
+           width: 500px;
+       }
+    }
+}
 
 /*footer*/
 
