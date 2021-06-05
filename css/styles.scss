@@ -31,6 +31,7 @@ header{
     top: 0;
     left: 0;
     font-size: 18px;
+    margin-top: 45px;
     font-family: $font-poppins;
     nav{
         display: flex;
@@ -110,11 +111,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     .hero-content{
-<<<<<<< HEAD
       
-=======
-        border: 5px solid black;
->>>>>>> b9ac219e2d8ff95bdd2e4344a3f01730fc4d62e8
         display: flex;
        flex-direction: row;
        align-items: center;
@@ -145,6 +142,7 @@ header{
         border:2px solid $primary-dark-violet;
         width: 250px;
         height: 60px;
+        margin-top: 25px;
         /*text format*/
         border-radius: calc(60px/2);
         font-size: $font-size-header;
