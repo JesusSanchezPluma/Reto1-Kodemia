@@ -61,6 +61,14 @@ header nav .navigation-1 ul {
   display: none;
 }
 
+header nav .navigation-1 ul li {
+  display: none;
+}
+
+header nav .navigation-1 ul li a {
+  display: none;
+}
+
 header nav .navigation-2 {
   display: none;
 }
