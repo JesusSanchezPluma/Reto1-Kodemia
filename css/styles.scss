@@ -17,7 +17,10 @@ $neutral-very-dark-violet: hsl(260, 8%, 14%);
 
 $font-poppins:'Poppins', sans-serif;
 
-
+*{
+    margin:0;
+    padding:0;
+}
 
 /*header*/
 $font-size-header: 25px;
@@ -41,9 +44,10 @@ header{
             display: flex;
             flex-direction: row;
             align-items: center;
-            h1{
-                font-size: 60px;
+            p{
+                font-size: 40px;
                 font-family: $font-poppins;
+                font-weight: bold;
             }
             ul{
                 display: flex;
@@ -106,7 +110,11 @@ header{
     flex-direction: column;
     justify-content: space-between;
     .hero-content{
+<<<<<<< HEAD
       
+=======
+        border: 5px solid black;
+>>>>>>> b9ac219e2d8ff95bdd2e4344a3f01730fc4d62e8
         display: flex;
        flex-direction: row;
        align-items: center;
@@ -268,41 +276,42 @@ header{
 
 footer{
     /*size format*/
-    border: 5px solid darkorange;
-    height: 300px;  
-    width: 100%; 
+    height:     300px;  
+    width:      100%; 
     /*background format*/
-    background-color:$neutral-very-dark-violet;
-    color: white;
-    font-family: $font-poppins;
+    background-color:   $neutral-very-dark-violet;
+    color:              white;
+    font-family:        $font-poppins;
     .footer-shortly{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        margin-top: 50px;
-        margin-right: 95px;
-        margin-left: 95px;
+        display:            flex;
+        flex-direction:     row;
+        justify-content:    space-between;
+        align-items:        flex-start;
+        padding-top:    60px;
+        margin-right:   95px;
+        margin-left:    95px;
+        height:         220px;
         div{
-            display:flex;
-            flex-direction: column;
+            display:            flex;
+            flex-direction:     column;
         }
         div.titlefooter{
             p{
-                font-weight: bold;
-                font-size: 40px;
-                margin-top:0;
-                margin-right: 8rem;
+                font-weight:    bold;
+                font-size:      40px;
+                margin-top:     0;
+                margin-left:    0;
+                margin-right:   8rem;
             }
         }
         div *:first-child{
-            font-weight: bold;
-            font-size: 20px;
+            font-weight:    bold;
+            font-size:      20px;
         }
         div *:not(:first-child){
-            font-size: 20px;
-            margin-top: 4px;
-            margin-bottom: 4px;
+            font-size:      20px;
+            margin-top:     4px;
+            margin-bottom:  4px;
             color:$neutral-grayish-violet;
         }
         div.social-media-icons{
