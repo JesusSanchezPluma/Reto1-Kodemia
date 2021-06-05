@@ -130,7 +130,7 @@ header{
           font-family: $font-poppins;
           padding: 0 95px 0 0px;
           text-align: left;
-          font-size: 25px;
+          font-size: 18px;
           color:$neutral-grayish-violet;
        }
        .button-hero{
@@ -162,6 +162,28 @@ header{
            height: 375px;
            width: 650px;
        }
+    }
+}
+
+/*links*/
+.links{
+    border:5px solid violet;
+    height: 200px;
+    .shorten{
+        display: flex;
+        height: 130px;
+        border-radius: 10px;
+        margin: 35px 95px 35px 95px;
+        border: 5px solid mediumblue;
+    }
+    .shorten-detalle{
+        margin: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        border: 5px solid red;
     }
 }
 
