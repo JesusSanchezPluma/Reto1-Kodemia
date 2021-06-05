@@ -19,10 +19,14 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  font-size: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 25px;
 }
 
 header nav .navigation-1 {
@@ -33,9 +37,14 @@ header nav .navigation-1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .navigation-1 h1 {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
 }
 
 header nav .navigation-1 ul {
@@ -56,27 +65,44 @@ header nav .navigation-1 ul li {
 header nav .navigation-1 ul li a {
   text-decoration: none;
   color: #9e9aa7;
-  font-family: "Poppins", sans-serif;
 }
 
 header nav .navigation-2 .login-button {
+  /*button format*/
   background-color: white;
   border: white;
-  font-size: 30px;
-  color: #9e9aa7;
+  /*text format*/
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
+  color: #9e9aa7;
+}
+
+header nav .navigation-2 .login-button:hover {
+  background-color: red;
+  cursor: pointer;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 header nav .navigation-2 .sign-up-button {
+  /*button format*/
   background-color: #2acfcf;
   border: 2px solid #3b3054;
   width: 150px;
   height: 60px;
-  border-radius: calc(60px/2);
-  font-size: 30px;
   margin-left: 3rem;
-  color: white;
+  /*text format*/
+  border-radius: calc(60px/2);
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+header nav .navigation-2 .sign-up-button:hover {
+  background-color: red;
+  cursor: pointer;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 /*main*/
@@ -140,6 +166,59 @@ header nav .navigation-2 .sign-up-button {
 .hero .hero-content img {
   height: 350px;
   width: 500px;
+}
+
+.boost {
+  /*size format*/
+  border: 5px solid yellow;
+  height: 250px;
+  width: 100%;
+  /*background format*/
+  background-image: url("/images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #3b3054;
+  background-position: left top;
+  background-size: cover;
+  /*Alineation format*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*font format*/
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.boost p {
+  font-size: 40px;
+  margin: 25px;
+}
+
+.boost button {
+  /*button format*/
+  background-color: #2acfcf;
+  border: 2px solid #3b3054;
+  width: 250px;
+  height: 60px;
+  /*text format*/
+  border-radius: calc(60px/2);
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  /*hover*/
+}
+
+.boost button:hover {
+  cursor: pointer;
 }
 
 /*footer*/

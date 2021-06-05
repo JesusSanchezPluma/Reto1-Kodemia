@@ -20,6 +20,7 @@ $font-poppins:'Poppins', sans-serif;
 
 
 /*header*/
+$font-size-header: 25px;
 
 header{
     height: 170px;
@@ -31,12 +32,17 @@ header{
     nav{
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        font-size: 30px;
+        align-items: center;
+        flex-direction: row;
+        font-size: $font-size-header;
         .navigation-1{
             display: flex;
             flex-direction: row;
-            align-items: baseline;
+            align-items: center;
+            h1{
+                font-size: 60px;
+                font-family: $font-poppins;
+            }
             ul{
                 display: flex;
                 flex-direction: row;
@@ -46,29 +52,42 @@ header{
                     a{
                         text-decoration: none;
                         color:$neutral-grayish-violet;
-                        font-family: $font-poppins;
                     }
                 }
             }
         }
         .navigation-2{
             .login-button{
+                /*button format*/
                 background-color: white;
                 border:white;
-                font-size: 30px;
-                color:$neutral-grayish-violet;
+                &:hover{
+                    background-color: red;
+                    cursor: pointer;
+                    transition: all 2s;
+                }
+                /*text format*/
+                font-size: $font-size-header;
                 font-family: $font-poppins;
+                color:$neutral-grayish-violet;
             }
             .sign-up-button{
+                /*button format*/
                 background-color:$primary-cyan;
                 border:2px solid $primary-dark-violet;
                 width: 150px;
                 height: 60px;
-                border-radius: calc(60px/2);
-                font-size: 30px;
                 margin-left: 3rem;
-                color:white;
+                &:hover{
+                    background-color: red;
+                    cursor: pointer;
+                    transition: all 2s;
+                }
+                /*text format*/
+                border-radius: calc(60px/2);
+                font-size: $font-size-header;
                 font-family: $font-poppins;
+                color:white;
             }
         }
     }
@@ -128,6 +147,47 @@ header{
            height: 350px;
            width: 500px;
        }
+    }
+}
+
+.boost{
+    /*size format*/
+    border: 5px solid yellow;
+    height: 250px;  
+    width: 100%; 
+    /*background format*/
+    background-image: url("/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-color:$primary-dark-violet;
+    background-position: left top;
+    background-size: cover;
+    /*Alineation format*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*font format*/
+    font-family: $font-poppins;
+    color:white;
+    p{
+        font-size: 40px;
+        margin: 25px;
+    }
+    button{
+        /*button format*/
+        background-color:$primary-cyan;
+        border:2px solid $primary-dark-violet;
+        width: 250px;
+        height: 60px;
+        /*text format*/
+        border-radius: calc(60px/2);
+        font-size: $font-size-header;
+        font-family: $font-poppins;
+        color:white;
+        /*hover*/
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
