@@ -35,6 +35,8 @@ header{
         align-items: center;
         flex-direction: row;
         font-size: $font-size-header;
+        margin-right: 95px;
+        margin-left: 95px;
         .navigation-1{
             display: flex;
             flex-direction: row;
@@ -220,6 +222,8 @@ footer{
         justify-content: space-evenly;
         align-items: flex-start;
         margin-top: 50px;
+        margin-right: 95px;
+        margin-left: 95px;
         div{
             display:flex;
             flex-direction: column;

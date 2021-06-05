@@ -27,6 +27,8 @@ header nav {
       -ms-flex-direction: row;
           flex-direction: row;
   font-size: 25px;
+  margin-right: 95px;
+  margin-left: 95px;
 }
 
 header nav .navigation-1 {
@@ -261,6 +263,8 @@ footer .footer-shortly {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 50px;
+  margin-right: 95px;
+  margin-left: 95px;
 }
 
 footer .footer-shortly div {
