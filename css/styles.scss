@@ -116,27 +116,42 @@ header{
        .contendor-2{
         text-align: left;
         
-        margin: 0 30px 0 75px;
-        padding: 0 15px 0 0px;
-       
-        
-    }
-       .parrafo-uno{
-          font-family: $font-poppins;
+        margin: 0 30px 35px 95px;
+        padding: 0 15px 0 0px;   
+        .parrafo-uno{
+            font-family: $font-poppins;
            font-size: 70px;
-           padding: 0;
-           margin: 0;
-           line-height: 75px;;
-           
-       }
-       .parrafo-dos{
-        font-family: $font-poppins;
-        padding: 0 95px 0 0px;
-        text-align: left;
-       
-               
+          padding: 0;
+          margin: 0;
+          line-height: 75px;;
          
-     }
+      }
+      .parrafo-dos{
+          font-family: $font-poppins;
+          padding: 0 95px 0 0px;
+          text-align: left;
+          font-size: 25px;
+          color:$neutral-grayish-violet;
+       }
+       .button-hero{
+        background-color:$primary-cyan;
+        border:2px solid $primary-dark-violet;
+        width: 250px;
+        height: 60px;
+        /*text format*/
+        border-radius: calc(60px/2);
+        font-size: $font-size-header;
+        font-family: $font-poppins;
+        color:white;
+        /*hover*/
+        &:hover{
+            cursor: pointer;
+        }
+       }
+
+        }
+       
+     
        
        .hero-img{
            text-align:right ;
@@ -144,8 +159,8 @@ header{
        }
        img{
           
-           height: 350px;
-           width: 500px;
+           height: 375px;
+           width: 650px;
        }
     }
 }
