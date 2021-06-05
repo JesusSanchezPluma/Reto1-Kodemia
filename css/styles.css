@@ -29,11 +29,6 @@ header nav {
   font-size: 25px;
 }
 
-header nav h1 {
-  font-size: 60px;
-  font-family: "Poppins", sans-serif;
-}
-
 header nav .navigation-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,9 +37,14 @@ header nav .navigation-1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .navigation-1 h1 {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
 }
 
 header nav .navigation-1 ul {
@@ -68,22 +68,41 @@ header nav .navigation-1 ul li a {
 }
 
 header nav .navigation-2 .login-button {
+  /*button format*/
   background-color: white;
   border: white;
+  /*text format*/
   font-size: 25px;
-  color: #9e9aa7;
   font-family: "Poppins", sans-serif;
+  color: #9e9aa7;
+}
+
+header nav .navigation-2 .login-button:hover {
+  background-color: red;
+  cursor: pointer;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 header nav .navigation-2 .sign-up-button {
+  /*button format*/
   background-color: #2acfcf;
   border: 2px solid #3b3054;
   width: 150px;
   height: 60px;
+  margin-left: 3rem;
+  /*text format*/
   border-radius: calc(60px/2);
   font-size: 25px;
-  margin-left: 3rem;
+  font-family: "Poppins", sans-serif;
   color: white;
+}
+
+header nav .navigation-2 .sign-up-button:hover {
+  background-color: red;
+  cursor: pointer;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 /*main*/
@@ -129,6 +148,60 @@ header nav .navigation-2 .sign-up-button {
 .hero .hero-content img {
   height: 350px;
   width: 500px;
+}
+
+.boost {
+  /*size format*/
+  border: 5px solid red;
+  height: 250px;
+  width: 100%;
+  /*background format*/
+  background-image: url("/images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #3b3054;
+  background-position: left top;
+  background-size: cover;
+  /*Alineation format*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*font format*/
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.boost p {
+  font-size: 40px;
+  margin: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.boost button {
+  /*button format*/
+  background-color: #2acfcf;
+  border: 2px solid #3b3054;
+  width: 250px;
+  height: 60px;
+  /*text format*/
+  border-radius: calc(60px/2);
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  /*hover*/
+}
+
+.boost button:hover {
+  cursor: pointer;
 }
 
 /*footer*/
