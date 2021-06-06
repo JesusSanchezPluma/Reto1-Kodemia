@@ -156,9 +156,7 @@ body{
                 }
             }
         }
-
-        /*main*/
-
+        /*  M  A  I  N  */
         .hero{   
             height: 400px;
             display: flex;
@@ -214,59 +212,52 @@ body{
                 }
             }
         }
-
-/*links*/
-.links{
-   
-    height: 200px;
-    position: relative;
-    .shorten{
-       
-      display: flex ;
-      align-items: center;
-      justify-content: space-evenly;
-      
-        height: 180px;
-        border-radius: 10px;
-        margin: 35px 80px 35px 80px;
-        background-image: url("/images/bg-boost-desktop.svg");
-        background-repeat: no-repeat;
-        background-color:$primary-dark-violet;
-        background-position: left top;
-        background-size: cover;
-      
-      
-        
-    }
-    .shorten-detalle{ 
-        width: 90%;
-        z-index: 3;
-        input{
-            height: 60px;
-            width: 75%;
-            border-radius: 15px;
-            margin-right: 25px;
-            font-size: $font-size-header;
-            font-family: $font-poppins; 
-            padding-left: 20px;
-            color: $neutral-grayish-violet;
-        }
-        button{
-            height: 62px;
-            width: 20%;
-            margin-top: 4px;
-            border-radius: 15px;
-            background-color:$primary-cyan;
-            color: white;
-            font-size: $font-size-header;
-            font-family: $font-poppins;    
+        /*links*/
+        .links{
+            height: 200px;
+            position: relative;
+            .shorten{
+                display: flex ;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 180px;
+                border-radius: 10px;
+                margin: 35px 80px 35px 80px;
+                background-image: url("/images/bg-boost-desktop.svg");
+                background-repeat: no-repeat;
+                background-color:$primary-dark-violet;
+                background-position: left top;
+                background-size: cover;            
+            }
+            .shorten-detalle{ 
+                width: 90%;
+                z-index: 3;
+                input{
+                    height: 60px;
+                    width: 75%;
+                    border-radius: 15px;
+                    margin-right: 25px;
+                    font-size: $font-size-header;
+                    font-family: $font-poppins; 
+                    padding-left: 20px;
+                    color: $neutral-grayish-violet;
+                }
+                button{
+                    height: 62px;
+                    width: 20%;
+                    margin-top: 4px;
+                    border-radius: 15px;
+                    background-color:$primary-cyan;
+                    color: white;
+                    font-size: $font-size-header;
+                    font-family: $font-poppins;    
+                }
+            }
         }
     }
 }
-    }
-}
 
-/* CIERRA MEDIA DESKTOP */
+/* C I E R R A  M E D I A  D E S K T O P */
 
 
 .cards{
