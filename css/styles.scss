@@ -33,25 +33,23 @@ $font-size-header: 25px;
 body{
     min-width:375px;
     width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
     header{
         height: 170px;
         top: 0;
         left: 0;
-        margin-top: 45px;
+        padding-top: 20px;
         nav{
             display: flex;
-            justify-content: space-between;
             align-items: center;
             flex-direction: row;
+            justify-content: space-between;
             font-size: $font-size-header;
-            margin-right: 95px;
-            margin-left: 95px;
             .navigation-1{
                 display: flex;
-                flex-direction: row;
-                align-items: center;
                 p{
-                    font-size: 40px;
+                    font-size: 30px;
                     font-family: $font-poppins;
                     font-weight: bold;
                 }
@@ -61,6 +59,12 @@ body{
             }
             .navigation-2{
                 display: none;
+                button.hamburger{
+                    display: flex;
+                    height:20px;
+                    width: 40px;
+                    border-radius: 2px;
+                }
             }
         }
     }
@@ -152,77 +156,64 @@ body{
                 }
             }
         }
-    }
-}
 
-/*main*/
+        /*main*/
 
-
-.hero{
-   
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .hero-content{
-      
-        display: flex;
-       flex-direction: row;
-       align-items: center;
-       
-       justify-content: center; 
-       .contendor-2{
-        text-align: left;
-        
-        margin: 0 30px 35px 95px;
-        padding: 0 15px 0 0px;   
-        .parrafo-uno{
-            font-family: $font-poppins;
-           font-size: 70px;
-          padding: 0;
-          margin: 0;
-          line-height: 75px;;
-         
-      }
-      .parrafo-dos{
-          font-family: $font-poppins;
-          padding: 0 95px 0 0px;
-          text-align: left;
-          font-size: 18px;
-          color:$neutral-grayish-violet;
-       }
-       .button-hero{
-        background-color:$primary-cyan;
-        border:2px solid $primary-dark-violet;
-        width: 250px;
-        height: 60px;
-        margin-top: 25px;
-        /*text format*/
-        border-radius: calc(60px/2);
-        font-size: $font-size-header;
-        font-family: $font-poppins;
-        color:white;
-        /*hover*/
-        &:hover{
-            cursor: pointer;
+        .hero{   
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .hero-content{      
+                display: flex;
+                flex-direction: row;
+                align-items: center;       
+                justify-content: center; 
+                    .contendor-2{
+                        text-align: left;                        
+                        margin: 0 30px 35px 95px;
+                        padding: 0 15px 0 0px;   
+                            .parrafo-uno{
+                                font-family: $font-poppins;
+                                font-size: 70px;
+                                padding: 0;
+                                margin: 0;
+                                line-height: 75px;;
+                            }
+                            .parrafo-dos{
+                                font-family: $font-poppins;
+                                padding: 0 95px 0 0px;
+                                text-align: left;
+                                font-size: 18px;
+                                color:$neutral-grayish-violet;
+                            }
+                            .button-hero{
+                                background-color:$primary-cyan;
+                                border:2px solid $primary-dark-violet;
+                                width: 250px;
+                                height: 60px;
+                                margin-top: 25px;
+                                /*text format*/
+                                border-radius: calc(60px/2);
+                                font-size: $font-size-header;
+                                font-family: $font-poppins;
+                                color:white;
+                                /*hover*/
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                            }
+                    }
+                .hero-img{
+                    text-align:right ;
+                    padding-left: 35px;
+                }
+                img{
+                    height: 375px;
+                    width: 650px;
+                }
+            }
         }
-       }
-
-        }
-       
-     
-       
-       .hero-img{
-           text-align:right ;
-           padding-left: 35px;
-       }
-       img{
-          
-           height: 375px;
-           width: 650px;
-       }
-    }
-}
 
 /*links*/
 .links{
@@ -272,6 +263,12 @@ body{
         }
     }
 }
+    }
+}
+
+/* CIERRA MEDIA DESKTOP */
+
+
 .cards{
     position: relative;
     border:5px solid red;
