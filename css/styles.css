@@ -11,10 +11,10 @@
 /*header*/
 /* M O V I L E  M O D E */
 body {
-  min-width: 375px;
-  width: 100%;
-  margin-right: 20px;
-  margin-left: 20px;
+  min-width: calc(375-($mobile-margins*2));
+  margin-right: 15px;
+  margin-left: 15px;
+  /*  F  O  O  T  E  R  */
 }
 
 body header {
@@ -41,40 +41,202 @@ body header nav {
   font-size: 25px;
 }
 
-body header nav .navigation-1 {
+body header nav div.navigation-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header nav .navigation-1 p {
+body header nav div.navigation-1 p {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
-body header nav .navigation-1 ul {
+body header nav div.navigation-1 ul {
   display: none;
 }
 
-body header nav .navigation-2 {
-  display: none;
-}
-
-body header nav .navigation-2 button.hamburger {
+body header nav div.navigation-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20px;
-  width: 40px;
-  border-radius: 2px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-/* D E S K T O P   M O D E */
+body header nav div.navigation-2 button.login-button {
+  display: none;
+}
+
+body header nav div.navigation-2 button.sign-up-button {
+  display: none;
+}
+
+body header nav div.navigation-2 button.hamburger {
+  font-weight: bold;
+  font-size: 35px;
+  border: 0px solid white;
+  background-color: white;
+  color: #9e9aa7;
+}
+
+body header nav div.navigation-2 button.hamburger:hover {
+  background-color: #3b3054;
+  cursor: pointer;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+body main {
+  /*  B  O  O  S  T  */
+}
+
+body main .boost {
+  /*size format*/
+  height: 250px;
+  width: 100%;
+  /*background format*/
+  background-image: url("/images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #3b3054;
+  background-size: cover;
+  /*Alineation format*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*font format*/
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body main .boost p {
+  font-size: 27px;
+  padding-bottom: 15px;
+}
+
+body main .boost button {
+  /*button format*/
+  background-color: #2acfcf;
+  border: 2px solid #3b3054;
+  width: 200px;
+  height: 60px;
+  /*text format*/
+  border-radius: calc(60px/2);
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  /*hover*/
+}
+
+body main .boost button:hover {
+  cursor: pointer;
+}
+
+body footer {
+  /*size format*/
+  width: 100%;
+  height: 850px;
+  /*background format*/
+  background-color: #232127;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+body footer .footer-shortly {
+  /*Positions with flexbox*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*size format*/
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body footer .footer-shortly div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+body footer .footer-shortly div.titlefooter p {
+  font-weight: bold;
+  font-size: 27px;
+}
+
+body footer .footer-shortly div *:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+body footer .footer-shortly div *:not(:first-child) {
+  font-size: 15px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #9e9aa7;
+}
+
+body footer .footer-shortly div.social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body footer .footer-shortly div.social-media-icons img {
+  margin-right: 1.5rem;
+}
+
+/* I N I C I A   M E D I A  D E S K T O P*/
 @media only screen and (min-width: 1200px) {
   body {
+    /*  H   E   A   D   E   R  */
     /*  M  A  I  N  */
-    /*links*/
+    /*  L   I   N   K   S  */
+    /*  C  A  R  D  S  */
+    /*  B  O  O  S  T  */
+    /*  F  O  O  T  E  R  */
   }
   body header {
     height: 170px;
@@ -103,7 +265,7 @@ body header nav .navigation-2 button.hamburger {
     margin-right: 95px;
     margin-left: 95px;
   }
-  body header nav .navigation-1 {
+  body header nav div.navigation-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -115,12 +277,12 @@ body header nav .navigation-2 button.hamburger {
         -ms-flex-align: center;
             align-items: center;
   }
-  body header nav .navigation-1 p {
+  body header nav div.navigation-1 p {
     font-size: 40px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
   }
-  body header nav .navigation-1 ul {
+  body header nav div.navigation-1 ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -131,19 +293,19 @@ body header nav .navigation-2 button.hamburger {
             flex-direction: row;
     list-style: none;
   }
-  body header nav .navigation-1 ul li {
+  body header nav div.navigation-1 ul li {
     margin-left: 2rem;
     display: inline;
   }
-  body header nav .navigation-1 ul li a {
+  body header nav div.navigation-1 ul li a {
     display: inline;
     text-decoration: none;
     color: #9e9aa7;
   }
-  body header nav .navigation-2 {
+  body header nav div.navigation-2 {
     display: block;
   }
-  body header nav .navigation-2 .login-button {
+  body header nav div.navigation-2 button.login-button {
     display: inline;
     /*button format*/
     background-color: white;
@@ -154,13 +316,13 @@ body header nav .navigation-2 button.hamburger {
     color: #9e9aa7;
     /*Hover*/
   }
-  body header nav .navigation-2 .login-button:hover {
-    background-color: red;
+  body header nav div.navigation-2 button.login-button:hover {
+    background-color: #3b3054;
     cursor: pointer;
     -webkit-transition: all 2s;
     transition: all 2s;
   }
-  body header nav .navigation-2 .sign-up-button {
+  body header nav div.navigation-2 button.sign-up-button {
     display: inline;
     /*button format*/
     background-color: #2acfcf;
@@ -175,13 +337,16 @@ body header nav .navigation-2 button.hamburger {
     color: white;
     /*Hover*/
   }
-  body header nav .navigation-2 .sign-up-button:hover {
-    background-color: red;
+  body header nav div.navigation-2 button.sign-up-button:hover {
+    background-color: #3b3054;
     cursor: pointer;
     -webkit-transition: all 2s;
     transition: all 2s;
   }
-  body .hero {
+  body header nav div.navigation-2 button.hamburger {
+    display: none;
+  }
+  body section.hero {
     height: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -194,7 +359,7 @@ body header nav .navigation-2 button.hamburger {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body .hero .hero-content {
+  body section.hero .hero-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -209,26 +374,26 @@ body header nav .navigation-2 button.hamburger {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .hero .hero-content .contendor-2 {
+  body section.hero .hero-content .contendor-2 {
     text-align: left;
     margin: 0 30px 35px 95px;
     padding: 0 15px 0 0px;
   }
-  body .hero .hero-content .contendor-2 .parrafo-uno {
+  body section.hero .hero-content .contendor-2 .parrafo-uno {
     font-family: "Poppins", sans-serif;
     font-size: 70px;
     padding: 0;
     margin: 0;
     line-height: 75px;
   }
-  body .hero .hero-content .contendor-2 .parrafo-dos {
+  body section.hero .hero-content .contendor-2 .parrafo-dos {
     font-family: "Poppins", sans-serif;
     padding: 0 95px 0 0px;
     text-align: left;
     font-size: 18px;
     color: #9e9aa7;
   }
-  body .hero .hero-content .contendor-2 .button-hero {
+  body section.hero .hero-content .contendor-2 .button-hero {
     background-color: #2acfcf;
     border: 2px solid #3b3054;
     width: 250px;
@@ -241,14 +406,14 @@ body header nav .navigation-2 button.hamburger {
     color: white;
     /*hover*/
   }
-  body .hero .hero-content .contendor-2 .button-hero:hover {
+  body section.hero .hero-content .contendor-2 .button-hero:hover {
     cursor: pointer;
   }
-  body .hero .hero-content .hero-img {
+  body section.hero .hero-content .hero-img {
     text-align: right;
     padding-left: 35px;
   }
-  body .hero .hero-content img {
+  body section.hero .hero-content img {
     height: 375px;
     width: 650px;
   }
@@ -337,6 +502,126 @@ body header nav .navigation-2 button.hamburger {
     justify-self: flex-end;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  body section.boost {
+    /*size format*/
+    /*border: 5px solid yellow;*/
+    height: 250px;
+    width: 100%;
+    /*background format*/
+    background-image: url("/images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: #3b3054;
+    background-position: left top;
+    background-size: cover;
+    /*Alineation format*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*font format*/
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  body section.boost p {
+    font-size: 40px;
+    margin: 25px;
+    padding: 0px;
+  }
+  body section.boost button {
+    /*button format*/
+    background-color: #2acfcf;
+    border: 2px solid #3b3054;
+    width: 250px;
+    height: 60px;
+    /*text format*/
+    border-radius: calc(60px/2);
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    /*hover*/
+  }
+  body section.boost button:hover {
+    cursor: pointer;
+  }
+  body footer {
+    /*size format*/
+    height: 300px;
+    width: 100%;
+    /*background format*/
+    background-color: #232127;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  body footer .footer-shortly {
+    /*Positions with flexbox*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    /*size format*/
+    padding-top: 60px;
+    margin-right: 95px;
+    margin-left: 95px;
+    height: 220px;
+  }
+  body footer .footer-shortly div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 00px;
+  }
+  body footer .footer-shortly div.titlefooter p {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 8rem;
+  }
+  body footer .footer-shortly div *:first-child {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  body footer .footer-shortly div *:not(:first-child) {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: #9e9aa7;
+  }
+  body footer .footer-shortly div.social-media-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body footer .footer-shortly div.social-media-icons img {
+    margin-top: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -446,136 +731,5 @@ body header nav .navigation-2 button.hamburger {
 
 .cards .group-card [class^="item-card"] .image-card img {
   padding-top: 22px;
-}
-
-.boost {
-  /*size format*/
-  border: 5px solid yellow;
-  height: 250px;
-  width: 100%;
-  /*background format*/
-  background-image: url("/images/bg-boost-desktop.svg");
-  background-repeat: no-repeat;
-  background-color: #3b3054;
-  background-position: left top;
-  background-size: cover;
-  /*Alineation format*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*font format*/
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
-
-.boost p {
-  font-size: 40px;
-  margin: 25px;
-}
-
-.boost button {
-  /*button format*/
-  background-color: #2acfcf;
-  border: 2px solid #3b3054;
-  width: 250px;
-  height: 60px;
-  /*text format*/
-  border-radius: calc(60px/2);
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  /*hover*/
-}
-
-.boost button:hover {
-  cursor: pointer;
-}
-
-/*footer*/
-footer {
-  /*size format*/
-  height: 300px;
-  width: 100%;
-  /*background format*/
-  background-color: #232127;
-  color: white;
-  font-family: "Poppins", sans-serif;
-}
-
-footer .footer-shortly {
-  /*Positions with flexbox*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  /*size format*/
-  padding-top: 60px;
-  margin-right: 95px;
-  margin-left: 95px;
-  height: 220px;
-}
-
-footer .footer-shortly div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer .footer-shortly div.titlefooter p {
-  font-weight: bold;
-  font-size: 40px;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 8rem;
-}
-
-footer .footer-shortly div *:first-child {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-footer .footer-shortly div *:not(:first-child) {
-  font-size: 20px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  color: #9e9aa7;
-}
-
-footer .footer-shortly div.social-media-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-footer .footer-shortly div.social-media-icons img {
-  margin-top: 1rem;
-  margin-right: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
