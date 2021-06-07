@@ -6,10 +6,29 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 /*header*/
 /* M O V I L E  M O D E */
+.button-cyan {
+  background-color: #2acfcf;
+  border-radius: 3rem;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 60px;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.button-cyan:hover {
+  background-color: #3b3054;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 body {
   min-width: calc(375-($mobile-margins*2));
   margin-right: 15px;
@@ -333,7 +352,6 @@ body footer .footer-shortly div.social-media-icons img {
     /*text format*/
     border-radius: calc(60px/2);
     font-size: 25px;
-    font-family: "Poppins", sans-serif;
     color: white;
     /*Hover*/
   }
@@ -346,20 +364,23 @@ body footer .footer-shortly div.social-media-icons img {
   body header nav div.navigation-2 button.hamburger {
     display: none;
   }
-  body section.hero {
-    height: 400px;
+  body .hero {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 0 100px 0;
   }
-  body section.hero .hero-content {
+  body .hero .hero-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -370,30 +391,40 @@ body footer .footer-shortly div.social-media-icons img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  body section.hero .hero-content .contendor-2 {
+  body .hero .hero-content .contendor-2 {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     text-align: left;
-    margin: 0 30px 35px 95px;
-    padding: 0 15px 0 0px;
+    padding: 0 0 0 80px;
   }
-  body section.hero .hero-content .contendor-2 .parrafo-uno {
-    font-family: "Poppins", sans-serif;
-    font-size: 70px;
-    padding: 0;
-    margin: 0;
-    line-height: 75px;
+  body .hero .hero-content .contendor-2 .parrafo-uno {
+    font-size: 60px;
   }
-  body section.hero .hero-content .contendor-2 .parrafo-dos {
-    font-family: "Poppins", sans-serif;
-    padding: 0 95px 0 0px;
+  body .hero .hero-content .contendor-2 .parrafo-dos {
     text-align: left;
     font-size: 18px;
     color: #9e9aa7;
   }
-  body section.hero .hero-content .contendor-2 .button-hero {
+  body .hero .hero-content .contendor-2 .button-hero {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     background-color: #2acfcf;
     border: 2px solid #3b3054;
     width: 250px;
@@ -406,20 +437,20 @@ body footer .footer-shortly div.social-media-icons img {
     color: white;
     /*hover*/
   }
-  body section.hero .hero-content .contendor-2 .button-hero:hover {
+  body .hero .hero-content .contendor-2 .button-hero:hover {
     cursor: pointer;
   }
-  body section.hero .hero-content .hero-img {
-    text-align: right;
-    padding-left: 35px;
-  }
-  body section.hero .hero-content img {
-    height: 375px;
-    width: 650px;
+  body .hero .hero-content .hero-img {
+    padding-left: 100px;
+    width: 60%;
+    overflow: hidden;
   }
   body .links {
     height: 200px;
-    position: relative;
+    width: 100%;
+    position: absolute;
+    top: 700px;
+    left: 0;
     z-index: 1;
   }
   body .links .shorten {
@@ -466,11 +497,9 @@ body footer .footer-shortly div.social-media-icons img {
     font-family: "Poppins", sans-serif;
   }
   body .cards {
-    width: 100vw;
-    height: 100vh;
-    z-index: 20px;
-    top: -120px;
-    background-color: #bfbfbf;
+    width: 100%;
+    height: 1200px;
+    padding: 100px 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -488,17 +517,22 @@ body footer .footer-shortly div.social-media-icons img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 100px;
+    height: 100%;
   }
   body .cards .group-card .line {
     width: 60%;
     height: 10px;
     top: 50%;
     left: 20%;
+    z-index: 0;
   }
   body .cards .group-card [class^="item-card"] {
+    background-color: white;
+    z-index: 1;
     height: 60%;
     position: relative;
     display: -webkit-box;
@@ -511,7 +545,6 @@ body footer .footer-shortly div.social-media-icons img {
         justify-self: center;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    padding-top: 30%;
     padding-left: 10%;
   }
   body .cards .group-card [class^="item-card"] p {
@@ -532,7 +565,8 @@ body footer .footer-shortly div.social-media-icons img {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-right: 1rem;
-    width: 33%;
+    width: 30%;
+    height: 50%;
   }
   body .cards .group-card .item-card2 {
     -ms-grid-column-align: center;
@@ -541,16 +575,18 @@ body footer .footer-shortly div.social-media-icons img {
         -ms-grid-row-align: center;
         align-self: center;
     margin: 0 1rem;
-    width: 33%;
+    width: 30%;
+    height: 50%;
   }
   body .cards .group-card .item-card3 {
     justify-self: flex-end;
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-left: 1rem;
-    width: 33%;
+    width: 30%;
+    height: 50%;
   }
-  body section.boost {
+  body .boost {
     /*size format*/
     /*border: 5px solid yellow;*/
     height: 250px;
@@ -579,12 +615,12 @@ body footer .footer-shortly div.social-media-icons img {
     font-family: "Poppins", sans-serif;
     color: white;
   }
-  body section.boost p {
+  body .boost p {
     font-size: 40px;
     margin: 25px;
     padding: 0px;
   }
-  body section.boost button {
+  body .boost button {
     /*button format*/
     background-color: #2acfcf;
     border: 2px solid #3b3054;
@@ -597,7 +633,7 @@ body footer .footer-shortly div.social-media-icons img {
     color: white;
     /*hover*/
   }
-  body section.boost button:hover {
+  body .boost button:hover {
     cursor: pointer;
   }
   body footer {
@@ -679,11 +715,11 @@ body footer .footer-shortly div.social-media-icons img {
 }
 
 .cards {
+  background-color: #e6e6e6;
   margin: 0;
-  padding: 0 2rem;
   position: relative;
   /*height: 100vh;*/
-  width: 100vw;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -697,9 +733,9 @@ body footer .footer-shortly div.social-media-icons img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cards .title-card {
@@ -753,7 +789,7 @@ body footer .footer-shortly div.social-media-icons img {
   width: 10px;
   height: 60%;
   left: 49.5%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .cards .group-card [class^="item-card"] {
@@ -775,6 +811,7 @@ body footer .footer-shortly div.social-media-icons img {
           align-items: center;
   margin: 3rem 0;
   position: relative;
+  z-index: 1;
 }
 
 .cards .group-card [class^="item-card"] h3 {
@@ -798,5 +835,116 @@ body footer .footer-shortly div.social-media-icons img {
 
 .cards .group-card [class^="item-card"] .image-card img {
   padding-top: 22px;
+}
+
+.hero .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.hero .hero-content .contendor-2 {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.hero .hero-content .contendor-2 * {
+  margin: 20px;
+}
+
+.hero .hero-content .contendor-2 h1 {
+  font-size: 40px;
+  color: #3b3054;
+}
+
+.hero .hero-content .contendor-2 p {
+  font-size: 20px;
+  color: #bfbfbf;
+}
+
+.hero .hero-content .contendor-2 button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hero .hero-content .hero-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.links {
+  width: 100%;
+  height: 150px;
+  background-color: #3b3054;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links .shorten {
+  width: 100%;
+}
+
+.links .shorten .shorten-detalle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links .shorten .shorten-detalle input {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: .5rem;
+}
+
+.links .shorten .shorten-detalle button {
+  width: 90%;
+  margin-top: 10px;
+  border-radius: .5rem;
+  height: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

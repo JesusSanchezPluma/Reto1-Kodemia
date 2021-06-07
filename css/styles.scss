@@ -21,7 +21,8 @@ $font-poppins:'Poppins', sans-serif;
 
 *{
     margin:0;
-    padding:0;
+    padding:0;    
+    font-family: $font-poppins;
 }
 
 $mobile-margins: 15px;
@@ -31,6 +32,25 @@ $mobile-margins: 15px;
 $font-size-header: 25px;
 
 /* M O V I L E  M O D E */
+
+.button-cyan{
+    background-color: $primary-cyan; 
+    border-radius: 3rem;
+    color: white;
+    border:none;
+    width: 150px;
+    height: 60px;    
+    line-height: 2;
+    font-size: 15px;
+	&:hover{
+        background-color: $primary-dark-violet;
+        cursor: pointer;
+        transition: all 1s;
+    }
+    
+
+
+}
 
 body{
     min-width:calc(375-($mobile-margins*2));
@@ -183,6 +203,8 @@ body{
 
 @media only screen and (min-width: 768px){
     body{
+
+       
         /*  H   E   A   D   E   R  */
         header{
             height: 170px;
@@ -254,7 +276,6 @@ body{
                         /*text format*/
                         border-radius: calc(60px/2);
                         font-size: $font-size-header;
-                        font-family: $font-poppins;
                         color:white;
                         /*Hover*/
                         &:hover{
@@ -271,35 +292,35 @@ body{
         }
         
         /*  M  A  I  N  */
-        section.hero{   
-            height: 400px;
+        .hero{
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 0 100px 0; 
             .hero-content{      
                 display: flex;
                 flex-direction: row;
                 align-items: center;       
-                justify-content: center; 
+                justify-content: flex-start;
                     .contendor-2{
-                        text-align: left;                        
-                        margin: 0 30px 35px 95px;
-                        padding: 0 15px 0 0px;   
+                        width: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        text-align: left;
+                        padding: 0 0 0 80px;    
                         .parrafo-uno{
-                            font-family: $font-poppins;
-                            font-size: 70px;
-                            padding: 0;
-                            margin: 0;
-                            line-height: 75px;;
+                            font-size: 60px;
                         }
                         .parrafo-dos{
-                            font-family: $font-poppins;
-                            padding: 0 95px 0 0px;
                             text-align: left;
                             font-size: 18px;
                             color:$neutral-grayish-violet;
                         }
                         .button-hero{
+                            align-self: start;
                             background-color:$primary-cyan;
                             border:2px solid $primary-dark-violet;
                             width: 250px;
@@ -316,20 +337,21 @@ body{
                             }
                         }
                     }
-                .hero-img{
-                    text-align:right ;
-                    padding-left: 35px;
-                }
-                img{
-                    height: 375px;
-                    width: 650px;
-                }
+                    .hero-img{
+                        padding-left: 100px;
+                        width: 60%;
+                        overflow: hidden;
+                    }
+                
             }
         }
         /*  L   I   N   K   S  */
         .links{
             height: 200px;
-            position: relative;
+            width: 100%;
+            position: absolute;
+            top: 700px;
+            left: 0;
             z-index: 1;
             .shorten{
                 display: flex ;
@@ -372,13 +394,10 @@ body{
         }
         /*  C  A  R  D  S  */
         .cards{
-            width: 100vw;
-            height: 100vh;
-            z-index: 20px;
-            top:-120px;
             
-           
-            background-color:$neutral-gray ;
+            width: 100%;
+            height: 1200px;
+            padding: 100px 0;
             justify-content: center;
             align-items: center;
             .title-card{
@@ -388,15 +407,19 @@ body{
             .group-card{
                 position: relative;
                 flex-direction: row;
-                justify-content: space-evenly;  
-                
+                justify-content: center;  
+                padding: 0 100px;
+                height: 100%;
                 .line{
                     width: 60%;
                     height: 10px;
                     top: 50%;
                     left: 20%;
+                    z-index: 0;
                 }
                 [class^="item-card"] {
+                    background-color: white;
+                    z-index: 1;
                     height: 60%;
                     position: relative;
                     display: flex;
@@ -404,7 +427,6 @@ body{
                     h3{
                         justify-self: center;
                         align-self: flex-start;
-                        padding-top: 30%;
                         padding-left: 10%;
                     } 
                     p{
@@ -425,24 +447,27 @@ body{
                     justify-self: flex-start;
                     align-self: flex-start;
                     margin-right: 1rem;
-                    width: 33%;            
+                    width: 30%;
+                    height: 50%;            
                 }
                 .item-card2{
                     justify-self: center;
                     align-self: center;
                     margin: 0 1rem;
-                    width: 33%;             
+                    width: 30%;                      
+                    height: 50%;             
                 }
                 .item-card3{
                     justify-self: flex-end;
                     align-self: flex-end;
                     margin-left: 1rem;
-                    width: 33%;             
+                    width: 30%;                      
+                    height: 50%;             
                 }
             }
         }
         /*  B  O  O  S  T  */
-        section.boost{
+        .boost{
             /*size format*/
             /*border: 5px solid yellow;*/
             height: 250px;  
@@ -547,19 +572,19 @@ body{
     background-color: $primary-cyan;
 } 
 
+
 .cards{
-    
+    background-color: lighten(black, 90%);
     margin: 0;
-    padding: 0 2rem;
     position: relative;
     /*height: 100vh;*/
-    width: 100vw;   
+    width: 100%;   
     font-family: $font-poppins;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: stretch;    
+    align-items: center;    
     .title-card{
         display: flex;
         flex-direction: column;
@@ -590,7 +615,7 @@ body{
             width: 10px;
             height: 60%;
             left: 49.5%;
-            z-index: -1;
+            z-index: 0;
         }      
 
         [class^="item-card"] {
@@ -603,6 +628,7 @@ body{
             align-items: center;     
             margin: 3rem 0;
             position: relative;
+            z-index: 1;
             h3{
                 color:$primary-dark-violet;
                 padding: 20px 0;
@@ -630,6 +656,78 @@ body{
     }        
 
 }
+
+.hero{
+    
+    .hero-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+         align-self: center;
+        .contendor-2{
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            *{
+                margin: 20px;
+            }
+            h1{
+                font-size: 40px;
+                color: $primary-dark-violet;
+            }
+            p{
+                font-size: 20px;
+                color: $neutral-gray;
+            }
+            button{
+                align-self: center;
+            }
+
+        }
+        .hero-img{
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+.links{
+    width: 100%;
+    height: 150px;
+    background-color: $primary-dark-violet;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .shorten{
+        width: 100%;
+        .shorten-detalle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 90%;
+                height: 50px;
+                margin-bottom: 10px;
+                border-radius: .5rem;
+            }
+            button{
+                width: 90%;
+                margin-top: 10px;
+                border-radius: .5rem;
+                height: 50px;       
+            }
+            
+        }
+    }
+}
+
+
 
 
 
