@@ -229,7 +229,7 @@ body footer .footer-shortly div.social-media-icons img {
 }
 
 /* I N I C I A   M E D I A  D E S K T O P*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   body {
     /*  H   E   A   D   E   R  */
     /*  M  A  I  N  */
@@ -479,17 +479,56 @@ body footer .footer-shortly div.social-media-icons img {
     width: 40vw;
   }
   body .cards .group-card {
-    height: 70vh;
+    position: relative;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    text-align: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .cards .group-card .line {
+    width: 60%;
+    height: 10px;
+    top: 50%;
+    left: 20%;
+  }
+  body .cards .group-card [class^="item-card"] {
+    height: 60%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  body .cards .group-card [class^="item-card"] h3 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+  body .cards .group-card [class^="item-card"] p {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: start;
+    padding-left: 10%;
+  }
+  body .cards .group-card [class^="item-card"] .image-card {
+    position: absolute;
+    top: -50px;
+    left: 10%;
   }
   body .cards .group-card .item-card1 {
     justify-self: flex-start;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    margin-right: 1rem;
+    width: 33%;
   }
   body .cards .group-card .item-card2 {
     -ms-grid-column-align: center;
@@ -497,11 +536,15 @@ body footer .footer-shortly div.social-media-icons img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    margin: 0 1rem;
+    width: 33%;
   }
   body .cards .group-card .item-card3 {
     justify-self: flex-end;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    margin-left: 1rem;
+    width: 33%;
   }
   body section.boost {
     /*size format*/
@@ -626,6 +669,11 @@ body footer .footer-shortly div.social-media-icons img {
 }
 
 /* C I E R R A  M E D I A  D E S K T O P */
+.line {
+  position: absolute;
+  background-color: #2acfcf;
+}
+
 .cards {
   margin: 0;
   padding: 0 2rem;
@@ -678,6 +726,8 @@ body footer .footer-shortly div.social-media-icons img {
 }
 
 .cards .group-card {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,11 +738,24 @@ body footer .footer-shortly div.social-media-icons img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   margin-bottom: 2rem;
 }
 
+.cards .group-card .line {
+  width: 10px;
+  height: 60%;
+  left: 49.5%;
+  z-index: -1;
+}
+
 .cards .group-card [class^="item-card"] {
+  height: 300px;
+  width: 300px;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,26 +763,24 @@ body footer .footer-shortly div.social-media-icons img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem 0 0 0;
-}
-
-.cards .group-card [class^="item-card"] * {
-  text-align: center;
-  margin: 0 0 1rem 0;
+  margin: 3rem 0;
+  position: relative;
 }
 
 .cards .group-card [class^="item-card"] h3 {
   color: #3b3054;
+  padding: 20px 0;
 }
 
 .cards .group-card [class^="item-card"] p {
   color: #bfbfbf;
+  padding: 20px 0;
 }
 
 .cards .group-card [class^="item-card"] .image-card {
@@ -727,6 +788,8 @@ body footer .footer-shortly div.social-media-icons img {
   height: 90px;
   background-color: #3b3054;
   border-radius: 100%;
+  position: absolute;
+  top: -50px;
 }
 
 .cards .group-card [class^="item-card"] .image-card img {

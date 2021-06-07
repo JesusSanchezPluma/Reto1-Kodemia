@@ -83,6 +83,7 @@ body{
         }
     }
     main{
+        
         /*  B  O  O  S  T  */
         .boost{
             /*size format*/
@@ -180,7 +181,7 @@ body{
 
 /* I N I C I A   M E D I A  D E S K T O P*/
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 768px){
     body{
         /*  H   E   A   D   E   R  */
         header{
@@ -268,6 +269,7 @@ body{
                 }
             }
         }
+        
         /*  M  A  I  N  */
         section.hero{   
             height: 400px;
@@ -377,21 +379,58 @@ body{
                 width: 40vw;
             }
             .group-card{
-                height: 70vh;
-                flex-direction: row;            
-                text-align: center;
+                position: relative;
+                flex-direction: row;
+                justify-content: space-evenly;  
+                
+                .line{
+                    width: 60%;
+                    height: 10px;
+                    top: 50%;
+                    left: 20%;
+                }
+                [class^="item-card"] {
+                    height: 60%;
+                    position: relative;
+                    display: flex;
+                    padding: 0;
+                    h3{
+                        justify-self: center;
+                        align-self: flex-start;
+                        padding-top: 30%;
+                        padding-left: 10%;
+                    } 
+                    p{
+                        justify-self: center;
+                        align-self: flex-start;
+                        text-align: start;
+                        padding-left: 10%;
+                    }
+                    .image-card{
+                        position: absolute;
+                        top: -50px;
+                        left: 10%;
+                    }
+                    
+                }
                 
                 .item-card1{
                     justify-self: flex-start;
-                    align-self: flex-start;            
+                    align-self: flex-start;
+                    margin-right: 1rem;
+                    width: 33%;            
                 }
                 .item-card2{
                     justify-self: center;
-                    align-self: center;            
+                    align-self: center;
+                    margin: 0 1rem;
+                    width: 33%;             
                 }
                 .item-card3{
                     justify-self: flex-end;
-                    align-self: flex-end;            
+                    align-self: flex-end;
+                    margin-left: 1rem;
+                    width: 33%;             
                 }
             }
         }
@@ -496,13 +535,18 @@ body{
 
 /* C I E R R A  M E D I A  D E S K T O P */
 
+.line{
+    position: absolute;
+    background-color: $primary-cyan;
+} 
 
 .cards{
+    
     margin: 0;
     padding: 0 2rem;
     position: relative;
     /*height: 100vh;*/
-    width: 100vw;    
+    width: 100vw;   
     font-family: $font-poppins;
     box-sizing: border-box;
     display: flex;
@@ -527,36 +571,51 @@ body{
     }
 
     .group-card{
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;   
         justify-content: center;
+        align-items: center;
         text-align: center;
-        margin-bottom: 2rem;   
+        margin-bottom: 2rem;
+        .line{
+            width: 10px;
+            height: 60%;
+            left: 49.5%;
+            z-index: -1;
+        }      
+
         [class^="item-card"] {
+            height: 300px;
+            width: 300px;
+            background-color: white;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-                           
-            margin: 2rem 0 0 0;
-            *{   
-                text-align: center;               
-                margin: 0 0 1rem 0;
-                
-            }
+            justify-content: center;
+            align-items: center;     
+            margin: 3rem 0;
+            position: relative;
             h3{
                 color:$primary-dark-violet;
+                padding: 20px 0;
             }
             p{
                 color: $neutral-gray;
+                
+                padding: 20px 0;
             }
             .image-card{
                 width: 90px;
                 height: 90px;
                 background-color: $primary-dark-violet;
                 border-radius: 100%;
+                position: absolute;
+                top: -50px;
+                
                img{
                    padding-top: 22px;
+                   
                }
             }
             
