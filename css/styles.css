@@ -420,6 +420,7 @@ body footer .footer-shortly div.social-media-icons img {
   body .links {
     height: 200px;
     position: relative;
+    z-index: 1;
   }
   body .links .shorten {
     display: -webkit-box;
@@ -442,7 +443,7 @@ body footer .footer-shortly div.social-media-icons img {
   }
   body .links .shorten-detalle {
     width: 90%;
-    z-index: 3;
+    z-index: 25;
   }
   body .links .shorten-detalle input {
     height: 60px;
@@ -467,6 +468,9 @@ body footer .footer-shortly div.social-media-icons img {
   body .cards {
     width: 100vw;
     height: 100vh;
+    z-index: 20px;
+    top: -120px;
+    background-color: #bfbfbf;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
