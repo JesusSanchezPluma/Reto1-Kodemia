@@ -459,7 +459,7 @@ body footer .footer-shortly div.social-media-icons img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100px;
+    height: 130px;
     width: 90%;
     position: absolute;
     top: 760px;
@@ -467,6 +467,7 @@ body footer .footer-shortly div.social-media-icons img {
     z-index: 1;
   }
   body .links .shorten {
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
