@@ -202,9 +202,7 @@ body{
 /* I N I C I A   M E D I A  D E S K T O P*/
 
 @media only screen and (min-width: 768px){
-    body{
-
-       
+    body{       
         /*  H   E   A   D   E   R  */
         header{
             height: 170px;
@@ -304,7 +302,7 @@ body{
                 align-items: center;       
                 justify-content: flex-start;
                     .contendor-2{
-                        width: 500px;
+                        width: 600px;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
@@ -319,7 +317,7 @@ body{
                             font-size: 18px;
                             color:$neutral-grayish-violet;
                         }
-                        .button-hero{
+                        .button-cyan{
                             align-self: start;
                             background-color:$primary-cyan;
                             border:2px solid $primary-dark-violet;
@@ -354,7 +352,7 @@ body{
             height: 100px;
             width: 90%;
             position: absolute;
-            top: 800px;
+            top: 760px;
             left: 5%;
             z-index: 1;
             .shorten{
@@ -376,15 +374,17 @@ body{
                     justify-content: space-between;
                     height: 100px;
                     input{
+                        text-align: start;
                         align-self: center;
                         width: 70%;
                         /*height: 50px;
                         width: 700px;
                         border-radius: 15px;
                         margin-right: 0 25px;*/
-                        font-family: $font-poppins; 
+                        font-size: 20px;
                         color: $neutral-grayish-violet;
                         margin: 0;
+                        border-radius: 15px;
                     }
                     button{
                         align-self: center;
@@ -394,9 +394,10 @@ body{
                         width: 200px;
                         margin-top: 4px;
                         border-radius: 15px;*/
+                        border-radius: 15px;
                         background-color:$primary-cyan;
                         color: white;
-                        font-size: 15px;   
+                        font-size: 20px;   
                     }
                 }          
             }

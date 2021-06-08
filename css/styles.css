@@ -396,7 +396,7 @@ body footer .footer-shortly div.social-media-icons img {
             justify-content: flex-start;
   }
   body .hero .hero-content .contendor-2 {
-    width: 500px;
+    width: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -421,7 +421,7 @@ body footer .footer-shortly div.social-media-icons img {
     font-size: 18px;
     color: #9e9aa7;
   }
-  body .hero .hero-content .contendor-2 .button-hero {
+  body .hero .hero-content .contendor-2 .button-cyan {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
@@ -437,7 +437,7 @@ body footer .footer-shortly div.social-media-icons img {
     color: white;
     /*hover*/
   }
-  body .hero .hero-content .contendor-2 .button-hero:hover {
+  body .hero .hero-content .contendor-2 .button-cyan:hover {
     cursor: pointer;
   }
   body .hero .hero-content .hero-img {
@@ -462,7 +462,7 @@ body footer .footer-shortly div.social-media-icons img {
     height: 100px;
     width: 90%;
     position: absolute;
-    top: 800px;
+    top: 760px;
     left: 5%;
     z-index: 1;
   }
@@ -505,6 +505,7 @@ body footer .footer-shortly div.social-media-icons img {
     height: 100px;
   }
   body .links .shorten .shorten-detalle input {
+    text-align: start;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -513,9 +514,10 @@ body footer .footer-shortly div.social-media-icons img {
                         width: 700px;
                         border-radius: 15px;
                         margin-right: 0 25px;*/
-    font-family: "Poppins", sans-serif;
+    font-size: 20px;
     color: #9e9aa7;
     margin: 0;
+    border-radius: 15px;
   }
   body .links .shorten .shorten-detalle button {
     -ms-flex-item-align: center;
@@ -527,9 +529,10 @@ body footer .footer-shortly div.social-media-icons img {
                         width: 200px;
                         margin-top: 4px;
                         border-radius: 15px;*/
+    border-radius: 15px;
     background-color: #2acfcf;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
   }
   body .cards {
     width: 100%;
